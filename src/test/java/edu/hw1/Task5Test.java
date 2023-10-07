@@ -1,4 +1,4 @@
-package hw1;
+package edu.hw1;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -12,12 +12,15 @@ public class Task5Test {
         "11211230, true",
         "13001120, true",
         "23336014, true",
-        "11, true"
+        "-23336014, true",
+        "9998, false",
+        "11, true",
+        "0, true"
     })
-    @DisplayName("Тест с различными аргументами")
-    void isPalindromeDescendantShouldWorkGivenDifferentArguments(int input, boolean expectedResult) {
+    @DisplayName("Функция должна возвращать правильные результаты")
+    void inputShouldBeProcessedCorrectly(int input, boolean expected) {
         boolean result = Task5.isPalindromeDescendant(input);
-        assertThat(result).isEqualTo(expectedResult);
+        assertThat(result).isEqualTo(expected);
     }
 
 }

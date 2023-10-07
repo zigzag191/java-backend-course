@@ -1,22 +1,27 @@
-package hw1;
+package edu.hw1;
 
 import java.util.Arrays;
 
-public class Task6 {
+public final class Task6 {
+
+    private static final int BASE = 10;
+    private static final int MIN_RANGE = 1000;
+    private static final int MAX_RANGE = 9999;
+    private static final int K = 6174;
 
     public static int countK(int number) {
-        if (number <= 1000 || number > 9999) {
-            throw new IllegalArgumentException("number must be in range (1000;9999]");
+        if (number <= MIN_RANGE || number > MAX_RANGE) {
+            throw new IllegalArgumentException("number must be in range ("
+                + MIN_RANGE + ";" + MAX_RANGE + "]");
         }
-        if (number == 6174) {
+        if (number == K) {
             return 0;
         }
 
         int[] arr = numberToArray(number);
         Arrays.sort(arr);
         int ascending = arrayToNumber(arr);
-        reverse(arr);
-        int descending = arrayToNumber(arr);
+        int descending = reverseArrayToNumber(arr);
 
         int diff = descending - ascending;
         return 1 + countK(diff);
@@ -34,18 +39,19 @@ public class Task6 {
     private static int arrayToNumber(int[] array) {
         int result = 0;
         for (int n : array) {
-            result *= 10;
+            result *= BASE;
             result += n;
         }
         return result;
     }
 
-    private static void reverse(int[] array) {
-        for (int l = 0, r = array.length - 1; l < r; ++l, --r) {
-            int tmp = array[l];
-            array[l] = array[r];
-            array[r] = tmp;
+    private static int reverseArrayToNumber(int[] array) {
+        int result = 0;
+        for (int i = array.length - 1; i >= 0; --i) {
+            result *= BASE;
+            result += array[i];
         }
+        return result;
     }
 
     private Task6() {

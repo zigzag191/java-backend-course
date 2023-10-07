@@ -1,14 +1,16 @@
-package hw1;
+package edu.hw1;
 
-public class Task2 {
+public final class Task2 {
+
+    private static final int BASE = 10;
 
     public static int countDigits(int number) {
-        number = Math.abs(number) / 10;
+        int n = number / BASE;
 
         int result = 1;
-        while (number != 0) {
+        while (n != 0) {
             ++result;
-            number /= 10;
+            n /= BASE;
         }
 
         return result;

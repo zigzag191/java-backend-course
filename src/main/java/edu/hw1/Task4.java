@@ -1,8 +1,8 @@
-package hw1;
+package edu.hw1;
 
 import java.util.Objects;
 
-public class Task4 {
+public final class Task4 {
 
     public static String fixString(String str) {
         Objects.requireNonNull(str);
