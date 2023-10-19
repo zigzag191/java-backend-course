@@ -20,19 +20,18 @@ public final class PopularCommandExecutor {
 
     private void tryExecute(String command) {
         int attempt = 0;
-        while (attempt < maxAttempts - 1) {
+        while (attempt < maxAttempts) {
             try (var connection = manager.getConnection()) {
                 connection.execute(command);
                 return;
             } catch (ConnectionException e) {
+                if (attempt == maxAttempts - 1) {
+                    LOGGER.error("unable to execute command after " + maxAttempts + " attempts");
+                    throw new ConnectionException("unable to execute command", e);
+                }
                 LOGGER.warn("failed to execute command, trying again...");
             }
             ++attempt;
-        }
-        try (var connection = manager.getConnection()) {
-            connection.execute(command);
-        } catch (ConnectionException e) {
-            throw new ConnectionException("unable to execute command after " + maxAttempts + " attempts", e);
         }
     }
 
