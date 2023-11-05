@@ -52,17 +52,17 @@ public class MazeTest {
         new MazePosition(4, 4)
     );
 
-    String expectedPrint = "o-o-o-o-o-o\r\n"
-        + "|S|  * * *|\r\n"
-        + "o o-o o-o o\r\n"
-        + "|*|  *|  *|\r\n"
-        + "o o-o o o o\r\n"
-        + "|* * *| |*|\r\n"
-        + "o o-o o o o\r\n"
-        + "| | | | |*|\r\n"
-        + "o o o-o o o\r\n"
-        + "| |     |F|\r\n"
-        + "o-o-o-o-o-o\r\n";
+    String expectedPrint = "o-o-o-o-o-o\n"
+        + "|S|  * * *|\n"
+        + "o o-o o-o o\n"
+        + "|*|  *|  *|\n"
+        + "o o-o o o o\n"
+        + "|* * *| |*|\n"
+        + "o o-o o o o\n"
+        + "| | | | |*|\n"
+        + "o o o-o o o\n"
+        + "| |     |F|\n"
+        + "o-o-o-o-o-o\n";
 
     static Stream<MazeSolver> solversShouldProduceExpectedPath() {
         return Stream.of(
