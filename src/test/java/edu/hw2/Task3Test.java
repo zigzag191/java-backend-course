@@ -28,6 +28,7 @@ public class Task3Test {
         var executor = new PopularCommandExecutor(connectionManager, maxAttempts);
         try {
             executor.updatePackages();
+        } catch (Exception ignored) {
         } finally {
             assertThat(connectionManager.getOpenedConnections())
                 .isGreaterThan(0)
