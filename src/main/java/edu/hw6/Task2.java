@@ -27,7 +27,7 @@ public final class Task2 {
         try (var copies = Files.find(folder, 1, (p, a) -> pattern.matcher(p.getFileName().toString()).matches())) {
             long count = copies.count();
             var builder = new StringBuilder();
-            builder.append(folder).append('\\').append(name).append(" - копия");
+            builder.append(folder).append('/').append(name).append(" - копия");
             if (count > 1) {
                 builder.append(" (").append(count).append(")");
             }
