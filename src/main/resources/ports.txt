@@ -1,0 +1,1134 @@
+0,TCP,UDP|резерв (допустимо использование в качестве значения порта источника, если отправляющий процесс не ожидает ответных сообщений)
+1,TCP,UDP|TCPMUX (TCP Port Service Multiplexer) - для обслуживания нескольких служб через один TCP-порт
+2,TCP,UDP|COMPRESSNET, процесс управления
+3,TCP,UDP|COMPRESSNET, процесс сжатия
+5,TCP,UDP|RJE (Remote Job Entry) - обслуживает отправку файлов и вывод отчётов при работе рабочей станции с мейнфреймами
+7,TCP,UDP|ECHO - предназначен для тестирования связи путём отправки данных на сервер и получения от него их же в неизменном виде
+9,TCP,UDP|DISCARD - предназначен для тестирования связи путём отправки данных на сервер, который отбрасывает принятое, не отправляя никакого ответа. Также используется для Wake-on-LAN-удалённого включения компьютера.
+11,TCP,UDP|SYSTAT - выдаёт список активных пользователей в операционной системе
+13,TCP,UDP|DAYTIME - предназначен для тестирования связи путём получения от сервера текущих даты и времени в текстовом виде
+17,TCP,UDP|QOTD (Quote of the Day)
+18,TCP,UDP|MSP (Message Send Protocol)
+19,TCP,UDP|CHARGEN (Character Generator)
+20,TCP|FTP-DATA - для передачи данных FTP
+21,TCP|FTP - для передачи команд FTP
+22,TCP,UDP|SSH (Secure SHell) - криптографический сетевой протокол для безопасной передачи данных
+23,TCP,UDP|Telnet - применяется для передачи текстовых сообщений в незашифрованном виде
+24,TCP,UDP|PRIV-MAIL - для использования в любых частных системах пересылки почтовых сообщений
+25,TCP,UDP|SMTP (Simple Mail Transfer Protocol) - применяется для пересылки почтовых сообщений в виде незашифрованного текста
+27,TCP,UDP|NSW-FE (NSW User System FE)
+29,TCP,UDP|MSG-ICP
+31,TCP,UDP|MSG-AUTH
+33,TCP,UDP|DSP (Display Support Protocol)
+35,TCP,UDP|PRIV-PRINT - для использования любыми частными серверами печати
+37,TCP,UDP|TIME[en] - используется для синхронизации времени (устар.)
+38,TCP,UDP|RAP (Route Access Protocol)
+39,TCP,UDP|RLP (Resource Location Protocol)[1], протокол поиска ресурсов - служит для нахождения серверов, предоставляющих услуги верхнего уровня
+41,TCP,UDP|Graphics - используется графическими модулями некоторых браузерных программ
+42,TCP,UDP|NAME, NAMESERVER - ARPA Host Name Server Protocol[en], протокол сервера имён ARPA (устар.)
+43,TCP,UDP|WHOIS
+44,TCP,UDP|MPM-FLAGS (Message Processing Module, Flags)
+45,TCP,UDP|MPM (Message Processing Module, receive)
+46,TCP,UDP|MPM-SND (Message Processing Module, send)
+47,TCP,UDP|NI-FTP
+48,TCP,UDP|AUDITD (Digital Audit Daemon)
+49,TCP,UDP|TACACS Login Host protocol
+50,TCP,UDP|RE-MAIL-CK
+51,TCP,UDP|резерв; ранее - LA-MAINT (IMP Logical Address Maintenance)
+52,TCP,UDP|XNS-TIME (Xerox Network Services Time Protocol)
+53,TCP,UDP|DOMAIN (Domain Name System, DNS)
+54,TCP,UDP|XNS-CH (Xerox Network Services ClearingHouse)
+55,TCP,UDP|ISI-GL (ISI Graphics Language)[2]
+56,TCP,UDP|XNS-AUTH (Xerox Network Services Authentication)
+57,TCP,UDP|PRIV-TERM - для любых служб, обеспечивающих терминальный доступ; ранее - MTP (Mail Transfer Protocol[en])
+58,TCP,UDP|XNS-MAIL (Xerox Network Services Mail)
+59,TCP,UDP|PRIV-FILE - для любых служб обработки файлов
+61,TCP,UDP|NI-MAIL
+62,TCP,UDP|ACAS (ACA Services)
+63,TCP,UDP|WHOISPP
+64,TCP,UDP|COVIA
+65,TCP,UDP|TACACS-DS (TACACS Database Service)
+66,TCP,UDP|SQL-NET
+67,TCP,UDP|BOOTPS (Bootstrap Protocol Server) - для сервера, с которого выполняется загрузка бездисковых рабочих станций; также используется DHCP (Dynamic Host Configuration Protocol)
+68,TCP,UDP|BOOTPC (Bootstrap Protocol Client) - для клиентов бездисковых рабочих станций, загружающихся с сервера BOOTP; также используется DHCP (Dynamic Host Configuration Protocol)
+69,TCP,UDP|TFTP (Trivial File Transfer Protocol) - тривиальный FTP применяется, например, при установке операционной системы на большое количество компьютеров в сетях предприятий. Для этого сервер TFTP и поддержка удалённого развёртывания (UAM) включены в состав серверных ОС Windows NT4 Server и новее
+70,TCP,UDP|Gopher
+71,TCP,UDP|NETRJS-1 (Remote job entry[en] Service)
+72,TCP,UDP|NETRJS-2 (Remote job entry[en] Service)
+73,TCP,UDP|NETRJS-3 (Remote job entry[en] Service)
+74,TCP,UDP|NETRJS-4 (Remote job entry[en] Service)
+75,TCP,UDP|PRIV-DIAL - для любых приложений телефонного дозвона
+76,TCP,UDP|DEOS (Distributed External Object Store)
+77,TCP,UDP|PRIV-RJE - для использования в любых службах Remote Job Entry[en]
+78,TCP,UDP|VETTCP
+79,TCP,UDP|Finger
+80,TCP,UDP|HTTP (HyperText Transfer Protocol); ранее - WWW
+82,TCP,UDP|XFER
+83,TCP,UDP|MIT-ML-DEV (MIT ML Device)
+84,TCP,UDP|CTF (Common Trace Facility)
+85,TCP,UDP|MIT-ML-DEV (MIT ML Device)
+86,TCP,UDP|MFCOBOL (Micro Focus Cobol)
+87,TCP,UDP|PRIV-TERM-L - для любых приложений, обеспечивающих терминальное соединение типа «текстовый чат» (например, аналогичных talk)
+88,TCP,UDP|Система аутентификации Kerberos
+89,TCP,UDP|SU-MIT-TG (SU/MIT Telnet Gateway)
+91,TCP,UDP|MIT-DOV (MIT Dover Spooler)
+92,TCP,UDP|NPP (Network Printing Protocol)
+93,TCP,UDP|DCP (Device Control Protocol)
+94,TCP,UDP|OBJCALL
+95,TCP,UDP|SUPDUP
+96,TCP,UDP|DIXIE
+97,TCP,UDP|SWIFT-RVF (Swift Remote Virtural File Protocol)
+98,TCP,UDP|TACNEWS
+99,TCP,UDP|METAGRAM
+101,TCP,UDP|HOSTNAME (NIC[en] Host Name Server)
+102,TCP,UDP|ISO-TSAP (Transport Service Access Point[en] Class 0)[4]
+103,TCP,UDP|GPPITNP (Genesis Point-to-Point Trans Net)
+104,TCP,UDP|ACR-NEMA (ACR/NEMA DICOM)
+105,TCP,UDP|CSO, CSNET-NS (CCSO[en]/Mailbox Name Nameserver)
+106,TCP,UDP|3COM-TSMUX
+107,TCP,UDP|RTELNET (Remote Telnet Service[5])
+108,TCP,UDP|SNAGAS (SNA Gateway Access Server)
+109,TCP,UDP|POP2 (Post Office Protocol Version 2)
+110,TCP,UDP|POP3 (Post Office Protocol Version 3)
+111,TCP,UDP|SUNRPC (Sun Remote Procedure Call)
+112,TCP,UDP|MCIDAS (McIDAS Data Transmission)
+113,TCP,UDP|AUTH (Authentication Service)
+113,TCP|IDENT - старая система идентификации, до сих пор используется в IRC-серверах
+115,TCP,UDP|SFTP (Simple File Transfer Protocol[en])
+116,TCP,UDP|ANSANOTIFY (ANSA REX Notify)
+117,TCP,UDP|UUCP-PATH (UUCP Path Service)
+118,TCP,UDP|SQLSERV (SQL Services)
+119,TCP,UDP|NNTP (Network News Transfer Protocol) - используется для отправки сообщений новостных рассылок
+120,TCP,UDP|CFDPTKT (RFC 1235)
+121,TCP,UDP|ERPC (Encore Expedited Remote Protocol Call)
+122,TCP,UDP|SMAKYNET
+123,TCP,UDP|NTP (Network Time Protocol) - используется для синхронизации времени
+124,TCP,UDP|ANSATRADER (ANSA REX Trader)
+125,TCP,UDP|LOCUS-MAP (Locus PC-Interface Net Map Ser)
+126,TCP,UDP|NXEdit; ранее - Unisys Unitary Login
+127,TCP,UDP|LOCUS-CON (Locus PC-Interface Conn Server)
+128,TCP,UDP|GSS-XLICEN (GSS X License Verification)
+129,TCP,UDP|PWDGEN (Password Generator Protocol)
+130,TCP,UDP|CISCO-FNA (Cisco FNATIVE)
+131,TCP,UDP|CISCO-TNA (Cisco TNATIVE)
+132,TCP,UDP|CISCO-SYS (Cisco SYSMAINT)
+133,TCP,UDP|STATSRV (Statistics Service)
+134,TCP,UDP|INGRES-NET
+135,TCP,UDP|EPMAP (DCE[en] Endpoint Mapper)
+136,TCP,UDP|PROFILE Naming System
+137,TCP,UDP|NETBIOS-NS (NetBIOS Name Service)
+138,TCP,UDP|NETBIOS-DGM (NetBIOS Datagram Service)
+139,TCP,UDP|NETBIOS-SSN (NetBIOS Session Service)
+140,TCP,UDP|EMFIS-DATA (EMFIS Data Service)
+141,TCP,UDP|EMFIS-CNTL (EMFIS Control Service)
+142,TCP,UDP|BL-IDM (Britton-Lee IDM)
+143,TCP,UDP|IMAP (Internet Message Access Protocol) - используется для получения и синхронизации сообщений электронной почты
+144,TCP,UDP|UMA (Universal Management Architecture)
+145,TCP,UDP|UAAC
+146,TCP,UDP|ISO-TP0
+147,TCP,UDP|ISO-IP
+148,TCP,UDP|JARGON
+149,TCP,UDP|AED-512
+150,TCP,UDP|SQL-NET
+151,TCP,UDP|HEMS
+152,TCP,UDP|BFTP (Background File Transfer Program)[7]
+153,TCP,UDP|SGMP (Simple Gateway Monitoring Protocol[en])
+154,TCP,UDP|NETSC-PROD
+155,TCP,UDP|NETSC-DEV
+156,TCP,UDP|SQLSRV (SQL Service)
+157,TCP,UDP|KNET-CMP
+158,TCP,UDP|PCMAIL-SRV
+159,TCP,UDP|NSS-ROUTING
+160,TCP,UDP|SGMP-TRAPS
+161,TCP,UDP|SNMP (Simple Network Management Protocol) - используется как порт прослушивания агентами удалённого мониторинга
+162,TCP,UDP|SNMPTRAP (Simple Network Management Protocol Trap)[8] - используется как порт приёма асинхронных прерываний (traps)
+163,TCP,UDP|CMIP-MAN (CMIP,TCP Manager)
+164,TCP,UDP|CMIP-AGENT (CMIP,TCP Agent)
+165,TCP,UDP|XNS-COURIER (Xerox Network Services)
+166,TCP,UDP|S-NET (Sirius Systems Network)
+167,TCP,UDP|NAMP
+168,TCP,UDP|RSVD
+169,TCP,UDP|SEND
+170,TCP,UDP|PRINT-SRV (Network PostScript)
+171,TCP,UDP|MULTIPLEX (Network Innovations Multiplex)
+172,TCP,UDP|CL-1 (Network Innovations CL/1); ранее - CL/1
+173,TCP,UDP|XYPLEX-MUX
+174,TCP,UDP|MAILQ
+175,TCP,UDP|VMNET
+176,TCP,UDP|GENRAD-MUX
+177,TCP,UDP|XDMCP (X Display Manager Control Protocol)
+178,TCP,UDP|NEXTSTEP (NextStep Window Server)
+179,TCP,UDP|BGP (Border Gateway Protocol)
+180,TCP,UDP|RIS (Intergraph)
+181,TCP,UDP|UNIFY
+182,TCP,UDP|AUDIT (Unisys Audit SITP)
+183,TCP,UDP|OCBINDER
+184,TCP,UDP|OCSERVER
+185,TCP,UDP|REMOTE-KIS
+186,TCP,UDP|KIS
+187,TCP,UDP|ACI (Application Communication Interface)
+188,TCP,UDP|MUMPS
+189,TCP,UDP|QFT (Queued File Transport)
+190,TCP,UDP|GACP (Gateway Access Control Protocol)
+191,TCP,UDP|PROSPERO (Prospero Directory Service)
+192,TCP,UDP|OSU-NMS (OSU Network Monitoring System)
+193,TCP,UDP|SRMP (Spider Remote Monitoring Protocol)
+194,TCP,UDP|IRC (Internet Relay Chat)
+195,TCP,UDP|DN6-NLM-AUD (DNSIX Network Level Module Audit)
+196,TCP,UDP|DN6-SMM-RED (DNSIX Session Mgt Module Audit Redir)
+197,TCP,UDP|DLS (Directory Location Service)
+198,TCP,UDP|DLS-MON (Directory Location Service Monitor)
+199,TCP,UDP|SMUX (SNMP Unix Multiplexer)
+200,TCP,UDP|SRC (IBM System Resource Controller)
+201,TCP,UDP|AT-RTMP (AppleTalk Routing Maintenance)
+202,TCP,UDP|AT-NBP (AppleTalk Name Binding)
+203,TCP,UDP|AT-3 (AppleTalk Unused)
+204,TCP,UDP|AT-ECHO (AppleTalk Echo)
+205,TCP,UDP|AT-5 (AppleTalk Unused)
+206,TCP,UDP|AT-ZIS (AppleTalk Zone Information)
+207,TCP,UDP|AT-7 (AppleTalk Unused)
+208,TCP,UDP|AT-8 (AppleTalk Unused)
+209,TCP,UDP|QMTP (The Quick Mail Transfer Protocol)
+210,TCP,UDP|Z39-50 (ANSI Z39.50)
+211,TCP,UDP|914C-G (Texas Instruments 914C/G Terminal)
+212,TCP,UDP|ANET (ATEXSSTR)
+213,TCP,UDP|IPX
+214,TCP,UDP|VMPWSCS
+215,TCP,UDP|SOFTPC (Insignia Solutions)
+216,TCP,UDP|CALLIC (Computer Associates Int’l License Server)
+217,TCP,UDP|DBASE (dBASE Unix)
+218,TCP,UDP|MPP (Message Posting Protocol)
+219,TCP,UDP|UARPS (Unisys ARPs)
+220,TCP,UDP|IMAP3 (Interactive Mail Access Protocol, version 3)
+221,TCP,UDP|FLN-SPX (Berkeley rlogind with SPX auth)
+222,TCP,UDP|RSH-SPX (Berkeley rshd with SPX auth)
+223,TCP,UDP|CDC (Certificate Distribution Center)
+224,TCP,UDP|MASQDIALER
+242,TCP,UDP|DIRECT
+243,TCP,UDP|SUR-MEAS (Survey Measurement)
+244,TCP,UDP|INBUSINESS
+245,TCP,UDP|LINK
+246,TCP,UDP|DSP3270 (Display Systems Protocol)
+247,TCP,UDP|SUBNTBCST-TFTP
+248,TCP,UDP|BHFHS
+249,TCP,UDP|резерв
+250,TCP,UDP|резерв
+251,TCP,UDP|резерв
+252,TCP,UDP|резерв
+253,TCP,UDP|резерв
+254,TCP,UDP|резерв
+255,TCP,UDP|резерв
+256,TCP,UDP|RAP
+257,TCP,UDP|SET (Secure Electronic Transaction)
+259,TCP,UDP|ESRO-GEN (Efficient Short Remote Operations)
+260,TCP,UDP|OPENPORT
+261,TCP,UDP|NSIIOPS (IIOP Name Service over TLS/SSL)
+262,TCP,UDP|ARCISDMS
+263,TCP,UDP|HDAP
+264,TCP,UDP|BGMP (Border Gateway Multicast Protocol[en])
+265,TCP,UDP|X-BONE-CTL
+266,TCP,UDP|SST (SCSI on ST)
+267,TCP,UDP|TD-SERVICE (Tobit David Service Layer)
+268,TCP,UDP|TD-REPLICA (Tobit David Replica)
+269,TCP,UDP|MANET
+270,TCP|резерв
+270,UDP|GIST (Q-mode encapsulation for GIST messages)
+271,TCP|PT-TLS (IETF Network Endpoint Assessment/NEA Posture Transport Protocol over TLS)
+271,UDP|резерв
+280,TCP,UDP|HTTP-MGMT
+281,TCP,UDP|PERSONAL-LINK
+282,TCP,UDP|CABLEPORT-AX (Cable Port A/X)
+283,TCP,UDP|RESCAP
+284,TCP,UDP|CORERJD
+286,TCP,UDP|FXP (FXP Communication)
+287,TCP,UDP|K-BLOCK
+308,TCP,UDP|NOVASTORBAKCUP (Novastor Backup)
+309,TCP,UDP|ENTRUSTTIME
+310,TCP,UDP|BHMDS
+311,TCP,UDP|ASIP-WEBADMIN (AppleShare IP WebAdmin), используется в Mac OS X Server
+312,TCP,UDP|VSLMP
+313,TCP,UDP|MAGENTA-LOGIC
+314,TCP,UDP|OPALIS-ROBOT
+315,TCP,UDP|DPSI
+316,TCP,UDP|DECAUTH
+317,TCP,UDP|ZANNET
+318,TCP,UDP|PKIX-TIMESTAMP (PKIX Time Stamp Protocol)
+319,TCP,UDP|PTP-EVENT
+320,TCP,UDP|PTP-GENERAL
+321,TCP,UDP|PIP
+322,TCP,UDP|RTSPS
+323,TCP|RPKI-RTR (Resource PKI to Router Protocol)
+323,UDP|резерв
+324,TCP|RPKI-RTR-TLS (Resource PKI to Router Protocol over TLS)
+324,UDP|резерв
+333,TCP,UDP|TEXAR (Texar Security Port)
+344,TCP,UDP|PDAP (Prospero Data Access Protocol)
+345,TCP,UDP|PAWSERV (Perf Analysis Workbench)
+346,TCP,UDP|ZSERV (Zebra server)
+347,TCP,UDP|FATSERV (Fatmen Server)
+348,TCP,UDP|CSI-SGWP (Cabletron Management Protocol)
+349,TCP,UDP|MFTP
+350,TCP,UDP|MATIP-TYPE-A (Mapping of Airline Traffic over Internet Protocol, Type A)
+351,TCP,UDP|MATIP-TYPE-B (Mapping of Airline Traffic over Internet Protocol, Type B)
+352,TCP,UDP|DTAG-STE-SB
+353,TCP,UDP|NDSAUTH
+354,TCP,UDP|BH611
+355,TCP,UDP|DATEX-ASN
+356,TCP,UDP|CLOANTO-NET-1
+357,TCP,UDP|BHEVENT
+358,TCP,UDP|SHRINKWRAP
+359,TCP,UDP|NSRMP (Network Security Risk Management Protocol)
+360,TCP,UDP|SCOI2ODIALOG
+361,TCP,UDP|SEMANTIX
+362,TCP,UDP|SRSSEND
+363,TCP,UDP|RSVP-TUNNEL
+364,TCP,UDP|AURORA-CMGR
+365,TCP,UDP|DTK
+366,TCP,UDP|ODMR (On-Demand Mail Relay)
+367,TCP,UDP|MORTGAGEWARE
+368,TCP,UDP|QBIKGDP
+369,TCP,UDP|RPC2PORTMAP
+370,TCP,UDP|CODAAUTH2
+371,TCP,UDP|CLEARCASE
+372,TCP,UDP|ULISTPROC (ListProcessor)
+373,TCP,UDP|LEGENT-1 (Legent Corporation)
+374,TCP,UDP|LEGENT-2 (Legent Corporation)
+375,TCP,UDP|HASSLE
+376,TCP,UDP|NIP (Amiga Envoy Network Inquiry Proto)
+377,TCP,UDP|TNETOS (NEC Corporation)
+378,TCP,UDP|DSETOS (NEC Corporation)
+379,TCP,UDP|IS99C (TIA/EIA/IS-99 modem client)
+380,TCP,UDP|IS99S (TIA/EIA/IS-99 modem server)
+381,TCP,UDP|HP-COLLECTOR (Hewlett-Packard performance data collector)
+382,TCP,UDP|HP-MANAGED-NODE (Hewlett-Packard performance data managed node)
+383,TCP,UDP|HP-ALARM-MGR (Hewlett-Packard data alarm manager)
+384,TCP,UDP|ARNS (A Remote Network Server System)
+385,TCP,UDP|IBM-APP (IBM Application)
+386,TCP,UDP|ASA (ASA Message Router Object Def.)
+387,TCP,UDP|AURP (AppleTalk Update-based Routing Protocol)
+388,TCP,UDP|UNIDATA-LDM
+389,TCP,UDP|LDAP (Lightweight Directory Access Protocol)
+390,TCP,UDP|UIS
+391,TCP,UDP|SYNOTICS-RELAY (SynOptics SNMP Relay Port)
+392,TCP,UDP|SYNOTICS-BROKER (SynOptics Port Broker Port)
+393,TCP,UDP|META5
+394,TCP,UDP|EMBL-NDT (EMBL Nucleic Data Transfer)
+395,TCP,UDP|NETCP (NetScout Control Protocol)
+396,TCP,UDP|NETWARE-IP (Novell Netware over IP)
+397,TCP,UDP|MPTN (Multi Protocol Trans. Net.)
+398,TCP,UDP|KRYPTOLAN
+399,TCP,UDP|ISO-TSAP-C2 (ISO Transport Class 2 Non-Control over TCP)
+400,TCP,UDP|OSB-SD (Oracle Secure Backup)
+401,TCP,UDP|UPS (Uninterruptible Power Supply)
+402,TCP,UDP|GENIE
+403,TCP,UDP|DECAP
+404,TCP,UDP|NCED
+405,TCP,UDP|NCLD
+406,TCP,UDP|IMSP (Interactive Mail Support Protocol)
+407,TCP,UDP|TIMBUKTU
+408,TCP,UDP|PRM-SM (Prospero Resource Manager - System Management)
+409,TCP,UDP|PRM-NM (Prospero Resource Manager - Node Management)
+410,TCP,UDP|DECLADEBUG (DECLadebug Remote Debug Protocol)
+411,TCP,UDP|RMT (Remote MT Protocol)
+412,TCP,UDP|SYNOPTICS-TRAP (Trap Convention Port)
+413,TCP,UDP|SMSP (Storage Management Services Protocol)
+414,TCP,UDP|INFOSEEK
+415,TCP,UDP|BNET
+416,TCP,UDP|SILVERPLATTER
+417,TCP,UDP|ONMUX
+418,TCP,UDP|HYPER-G
+419,TCP,UDP|ARIEL1
+420,TCP,UDP|SMPTE
+421,TCP,UDP|ARIEL2
+422,TCP,UDP|ARIEL3
+423,TCP,UDP|OPC-JOB-START (IBM Operations Planning and Control Start)
+424,TCP,UDP|OPC-JOB-TRACK (IBM Operations Planning and Control Track)
+425,TCP,UDP|ICAD
+426,TCP,UDP|SMARTDSP
+427,TCP,UDP|SVRLOC (SLP, Service Location Protocol)
+428,TCP,UDP|OCS-CMU
+429,TCP,UDP|OCS-AMU
+430,TCP,UDP|UTMPSD
+431,TCP,UDP|UTMPCD
+432,TCP,UDP|IASD
+433,TCP,UDP|NNSP
+434,TCP,UDP|MOBILEIP-AGENT
+435,TCP,UDP|MOBILIP-MN
+436,TCP,UDP|DNA-CML
+437,TCP,UDP|COMSCM
+438,TCP,UDP|DSFGW
+439,TCP,UDP|DASP
+440,TCP,UDP|SGCP
+441,TCP,UDP|DECVMS-SYSMGT
+442,TCP,UDP|CVC-HOSTD
+443,TCP,UDP|HTTPS (HyperText Transfer Protocol Secure) - HTTP с шифрованием по SSL или TLS
+444,TCP,UDP|SNPP (Simple Network Paging Protocol)[10]
+445,TCP,UDP|MICROSOFT-DS - используется в Microsoft Windows 2000 и поздних версий для прямого TCP/IP-доступа без использования NetBIOS (например, в Active Directory)
+446,TCP,UDP|DDM-RDB (DDM-Remote Relational Database Access)
+447,TCP,UDP|DDM-DFM (DDM-Distributed File Management)
+448,TCP,UDP|DDM-SSL (DDM-Remote DB Access Using Secure Sockets)
+449,TCP,UDP|AS-SERVERMAP (AS Server Mapper)
+450,TCP,UDP|TSERVER (Computer Supported Telecomunication Applications)
+451,TCP,UDP|SFS-SMP-NET (Cray Network Semaphore server)
+452,TCP,UDP|SFS-CONFIG (Cray SFS config server)
+453,TCP,UDP|CREATIVESERVER
+454,TCP,UDP|CONTENTSERVER
+455,TCP,UDP|CREATIVEPARTNR
+456,TCP|MACON-TCP
+456,UDP|MACON-UDP
+457,TCP,UDP|SCOHELP
+458,TCP,UDP|APPLEQTC (Apple QuickTime Conferencing)
+459,TCP,UDP|AMPR-RCMD
+460,TCP,UDP|SKRONK
+461,TCP,UDP|DATASURFSRV
+462,TCP,UDP|DATASURFSRVSEC
+463,TCP,UDP|ALPES
+464,TCP,UDP|KPASSWD (Kerberos Change/Set password)
+465,TCP|URD (URL Rendezvous Directory), для Cisco Source Specific Multicast (SSM)
+465,UDP|IGMPV3LITE (IGMP Version 3 Lite), для Cisco Source Specific Multicast (SSM)
+466,TCP,UDP|DIGITAL-VRC
+467,TCP,UDP|MYLEX-MAPD
+468,TCP,UDP|PHOTURIS
+469,TCP,UDP|RCP (Radio Control Protocol)
+470,TCP,UDP|SCX-PROXY
+471,TCP,UDP|MONDEX
+472,TCP,UDP|LJK-LOGIN
+473,TCP,UDP|HYBRID-POP
+474,TCP,UDP|TN-TL-W1
+475,TCP,UDP|TCPNETHASPSRV (HASP services, TCP/IP version)
+476,TCP,UDP|TN-TL-FD1
+477,TCP,UDP|SS7NS
+478,TCP,UDP|SPSC
+479,TCP,UDP|IAFDBASE
+480,TCP,UDP|IAFDBASE
+481,TCP,UDP|PH (Ph service)
+482,TCP,UDP|BGS-NSI
+483,TCP,UDP|ULPNET
+484,TCP,UDP|INTEGRA-SME
+485,TCP,UDP|POWERBURST
+486,TCP,UDP|AVIAN
+487,TCP,UDP|SAFT (Simple Asynchronous File Transfer)
+488,TCP,UDP|GSS-HTTP
+489,TCP,UDP|NEST-PROTOCOL
+490,TCP,UDP|MICOM-PFS
+491,TCP,UDP|GO-LOGIN
+492,TCP,UDP|TICF-1 (Transport Independent Convergence for FNA)
+493,TCP,UDP|TICF-2 (Transport Independent Convergence for FNA)
+494,TCP,UDP|POV-RAY
+495,TCP,UDP|INTECOURIER
+496,TCP,UDP|PIM-RP-DISC
+497,TCP|RETROSPECT - для службы архивации и восстановления Retrospect
+498,TCP,UDP|SIAM
+499,TCP,UDP|ISO-ILL
+500,TCP,UDP|ISAKMP (Internet Security Association and Key Management Protocol)
+501,TCP,UDP|STMF
+502,TCP,UDP|ASA-APPL-PROTO
+503,TCP,UDP|INTRINSA
+504,TCP,UDP|CITADEL
+505,TCP,UDP|MAILBOX-LM
+506,TCP,UDP|OHIMSRV
+507,TCP,UDP|CRS
+508,TCP,UDP|XVTTP
+509,TCP,UDP|SNARE
+510,TCP,UDP|FCP (FirstClass Protocol)
+511,TCP,UDP|PASSGO
+512,TCP|EXEC (Remote Process Execution)
+512,UDP|COMSAT (аутентификация с использованием паролей и UNIX-логинов); BIFF (используется системой электронной почты для уведомления пользователей о новых сообщениях, см. biff[en]; в настоящее время получает сообщения только от процессов, выполняющихся на той же машине)
+513,TCP|LOGIN - удаленный вход наподобие Telnet; автоматическая проверка подлинности выполняется на основе номеров привилегированных портов и распределённых баз данных, которые идентифицируют «домены аутентификации»
+513,UDP|WHO - поддержка базы данных открытых сеансов на машинах в локальной сети
+514,TCP|SHELL - для выполнения команд на удалённой системе; используется в аналогах командной строки с автоматической аутентификацией (например, rsh[en], rcp[en])
+514,UDP|SYSLOG - доставка сообщений о происходящих в системе событиях[11]
+515,TCP,UDP|PRINTER - для служб печати, ожидающих входящие соединения (например, Line Printer Daemon)
+516,TCP,UDP|VIDEOTEX
+517,TCP,UDP|TALK
+518,TCP,UDP|NTALK
+519,TCP,UDP|UTIME
+520,TCP|EFS (Extended Filename Server)
+520,UDP|ROUTER - локальный процесс маршрутизации; используется разновидность протокола Xerox NS RIP
+521,TCP,UDP|RPING
+522,TCP,UDP|ULP
+523,TCP,UDP|IBM-DB2
+524,TCP,UDP|NCP (NetWare Core Protocol) - используется, например, для доступа к ресурсам главного сервера NetWare, синхронизации времени и т. д.
+525,TCP,UDP|TIMED
+526,TCP,UDP|TEMPO
+527,TCP,UDP|STX (Stock IXChange)
+528,TCP,UDP|CUSTIX (Customer IXChange)
+529,TCP,UDP|IRC-SERV
+530,TCP,UDP|COURIER (RPC)
+531,TCP,UDP|CONFERENCE
+532,TCP,UDP|NETNEWS
+533,TCP,UDP|NETWALL
+534,TCP,UDP|WINDREAM
+535,TCP,UDP|IIOP
+536,TCP,UDP|OPALIS-RDV
+537,TCP,UDP|NMSP (Networked Media Streaming Protocol)
+538,TCP,UDP|GDOMAP
+539,TCP,UDP|APERTUS-LDP (Apertus Technologies Load Determination)
+540,TCP,UDP|UUCP (Unix-to-Unix Copy Protocol)
+541,TCP,UDP|UUCP-RLOGIN (Unix-to-Unix Copy Protocol Remote Login)
+542,TCP,UDP|COMMERCE
+543,TCP,UDP|KLOGIN (Kerberos login)
+544,TCP,UDP|KSHELL (Kerberos remote shell)
+545,TCP,UDP|APPLEQTCSRVR
+546,TCP,UDP|DHCPV6-CLIENT
+547,TCP,UDP|DHCPV6-SERVER
+548,TCP,UDP|AFPOVERTCP (Apple Filing Protocol over TCP)
+549,TCP,UDP|IDFP
+550,TCP,UDP|NEW-RWHO
+551,TCP,UDP|CYBERCASH (CyberCash Credit Card Protocol)[12]
+552,TCP,UDP|DEVSHR-NTS
+553,TCP,UDP|PIRP
+554,TCP,UDP|RTSP (Real Time Streaming Protocol)
+555,TCP,UDP|DSF
+556,TCP,UDP|REMOTEFS (Remote File Sharing[en] Server)
+557,TCP,UDP|OPENVMS-SYSIPC
+558,TCP,UDP|SDNSKMP
+559,TCP,UDP|TEEDTAP
+560,TCP,UDP|RMONITOR
+561,TCP,UDP|MONITOR
+562,TCP,UDP|CHSHELL
+563,TCP,UDP|NNTPS (Network News Transfer Protocol Secure) - NNTP с шифрованием по SSL или TLS
+564,TCP,UDP|9PFS (Plan 9 File Service)
+565,TCP,UDP|WHOAMI
+566,TCP,UDP|STREETTALK
+567,TCP,UDP|BANYAN-RPC
+568,TCP,UDP|MS-SHUTTLE
+569,TCP,UDP|MS-ROME
+570,TCP,UDP|METER
+571,TCP,UDP|UMETER
+572,TCP,UDP|SONAR
+573,TCP,UDP|BANYAN-VIP
+574,TCP,UDP|FTP-AGENT (FTP Software Agent System)
+575,TCP,UDP|VEMMI
+576,TCP,UDP|IPCD
+577,TCP,UDP|VNAS
+578,TCP,UDP|IPDD
+579,TCP,UDP|DECBSRV
+580,TCP,UDP|SNTP-HEARTBEAT
+581,TCP,UDP|BDP (Bundle Discovery Protocol)
+582,TCP,UDP|SCC-SECURITY
+583,TCP,UDP|PHILIPS-VC (Philips Video-Conferencing)
+584,TCP,UDP|KEYSERVER
+585,TCP,UDP|свободно; ранее - IMAP4-SSL (см. порт 993)
+586,TCP,UDP|PASSWORD-CHG (Password Change)
+587,TCP,UDP|SUBMISSION (Message Submission for Mail[13]) - используется (SMTP)
+588,TCP,UDP|CAL
+589,TCP,UDP|EYELINK
+590,TCP,UDP|TNS-CML
+591,TCP,UDP|HTTP-ALT (HTTP Alternate, см. порт 80) - используется программой FileMaker начиная с версии 6.0
+592,TCP,UDP|EUDORA-SET
+593,TCP,UDP|HTTP-RPC-EPMAP (RPC посредством HTTP) - используется, например, службами DCOM и Microsoft Exchange Server
+594,TCP,UDP|TPIP
+595,TCP,UDP|CAB-PROTOCOL
+596,TCP,UDP|SMSD
+597,TCP,UDP|PTCNAMESERVICE (PTC Name Service)
+598,TCP,UDP|SCO-WEBSRVRMG3 (SCO Web Server Manager 3)
+599,TCP,UDP|ACP (Aeolon Core Protocol)
+600,TCP,UDP|IPCSERVER (Sun IPC server)
+601,TCP,UDP|SYSLOG-CONN - используется Reliable Syslog Service (служба надёжной доставки сообщений о происходящих в системе событиях с использованием XML-схем протокола BEEP[en])[14]
+602,TCP,UDP|XMLRPC-BEEP (XML-RPC посредством BEEP[en])[15]
+603,TCP,UDP|IDXP (Intrusion Detection Exchange Protocol)[16]
+604,TCP,UDP|TUNNEL - используется для туннелирования протокола BEEP[en] на прикладном уровне[17]
+605,TCP,UDP|SOAP-BEEP - используется для передачи сообщений SOAP посредством протокола BEEP[en][18]
+606,TCP,UDP|URM (Cray Unified Resource Manager)
+607,TCP,UDP|NQS
+608,TCP,UDP|SIFT-UFT (Sender-Initiated/Unsolicited File Transfer)
+609,TCP,UDP|NPMP-TRAP
+610,TCP,UDP|NPMP-LOCAL
+611,TCP,UDP|NPMP-GUI
+612,TCP,UDP|HMMP-IND (HMMP Indication)
+613,TCP,UDP|HMMP-OP (HMMP Operation)
+614,TCP,UDP|SSHELL (SSL shell)
+615,TCP,UDP|SCO-INETMGR (SCO Internet Configuration Manager)
+616,TCP,UDP|SCO-SYSMGR (SCO System Administration Server)
+617,TCP,UDP|SCO-DTMGR (SCO Desktop Administration Server)
+618,TCP,UDP|DEI-ICDA
+619,TCP,UDP|COMPAQ-EVM
+620,TCP,UDP|SCO-WEBSRVRMGR (SCO WebServer Manager)
+621,TCP,UDP|ESCP-IP
+622,TCP,UDP|COLLABORATOR
+623,TCP|OOB-WS-HTTP (DMTF out-of-band web services management protocol)
+623,UDP|ASF-RMCP (ASF Remote Management and Control Protocol)
+624,TCP,UDP|CRYPTOADMIN
+625,TCP,UDP|DEC-DLM
+626,TCP,UDP|ASIA
+627,TCP,UDP|PASSGO-TIVOLI
+628,TCP,UDP|QMQP
+629,TCP,UDP|3COM-AMP3
+630,TCP,UDP|Tet’to
+631,TCP,UDP|IPP (Internet Printing Protocol)
+632,TCP,UDP|BMPP
+633,TCP,UDP|SERVSTAT (Service Status update) - для Sterling Software
+634,TCP,UDP|GINAD
+635,TCP,UDP|RLZDBASE
+636,TCP,UDP|LDAPS (Lightweight Directory Access Protocol Secure) - LDAP с шифрованием по SSL или TLS
+637,TCP,UDP|LANSERVER
+638,TCP,UDP|MCNS-SEC
+639,TCP,UDP|MSDP (Multicast Source Discovery Protocol[en])
+640,TCP,UDP|ENTRUST-SPS
+641,TCP,UDP|REPCMD
+642,TCP,UDP|ESRO-EMSDP (v1.3)
+643,TCP,UDP|SANITY
+644,TCP,UDP|DWR
+645,TCP,UDP|PSSC
+646,TCP,UDP|LDP (Label Distribution Protocol) - используется для маршрутизации в сетях MPLS
+647,TCP,UDP|DHCP-FAILOVER (DHCP Failover)[19]
+648,TCP,UDP|RRP (Registry Registrar Protocol)[20]
+649,TCP,UDP|CADVIEW-3D
+650,TCP,UDP|OBEX
+651,TCP,UDP|IEEE-MMS
+652,TCP,UDP|HELLO-PORT
+653,TCP,UDP|REPSCMD
+654,TCP,UDP|AODV (Ad-hoc On-demand Distance Vector)
+655,TCP,UDP|TINC
+656,TCP,UDP|SPMP
+657,TCP,UDP|RMC (Remote monitoring and Control) - используется в системах IBM (AIX Integrated Virtualization Manager[21], Hardware Management Console[en]) для динамической конфигурации управляемых логических разделов
+658,TCP,UDP|TENFOLD
+660,TCP,UDP|MAC-SRVR-ADMIN (Mac OS X Server administration)
+661,TCP,UDP|HAP
+662,TCP,UDP|PFTP
+663,TCP,UDP|PURENOISE
+664,TCP|OOB-WS-HTTPS (DMTF out-of-band secure web services management protocol)
+664,UDP|ASF-SECURE-RMCP (ASF Secure Remote Management and Control Protocol)
+665,TCP,UDP|SUN-DR (SUN Remote Dynamic Reconfiguration)
+666,TCP,UDP|MDQS;DOOM - использовался в играх Doom, Doom 2 компании id Software
+667,TCP,UDP|DISCLOSE (campaign contribution disclosures, SDR Technologies)
+668,TCP,UDP|MECOMM
+669,TCP,UDP|MEREGISTER
+670,TCP,UDP|VACDSM-SWS
+671,TCP,UDP|VACDSM-APP
+672,TCP,UDP|VPPS-QUA
+673,TCP,UDP|CIMPLEX
+674,TCP,UDP|ACAP (Application Configuration Access Protocol)
+675,TCP,UDP|DCTP
+676,TCP,UDP|VPPS-VIA
+677,TCP,UDP|VPP (Virtual Presence Protocol)
+678,TCP,UDP|GGF-NCP (GNU Generation Foundation NCP)
+679,TCP,UDP|MRM
+680,TCP,UDP|ENTRUST-AAAS
+681,TCP,UDP|ENTRUST-AAMS
+682,TCP,UDP|XFR
+683,TCP,UDP|CORBA-IIOP
+684,TCP,UDP|CORBA-IIOP-SSL
+685,TCP,UDP|MDC-PortMapper
+686,TCP,UDP|HCP-Wismar (Hardware Control Protocol Wismar)
+687,TCP,UDP|ASIPREGISTRY
+688,TCP,UDP|REALM-RUSD (ApplianceWare managment protocol)
+689,TCP,UDP|NMAP
+690,TCP,UDP|VATP (Velazquez Application Transfer Protocol)
+691,TCP,UDP|MSEXCH-ROUTING (Microsoft Exchange Server Routing)
+692,TCP,UDP|Hyperwave-ISP
+693,TCP,UDP|CONNENDP (almanid Connection Endpoint)
+694,TCP,UDP|HA-CLUSTER (Linux High Availability Cluster heartbeat)
+695,TCP,UDP|IEEE-MMS-SSL (IEEE Media Management System over SSL)[22]
+696,TCP,UDP|RUSHD
+697,TCP,UDP|UUIDGEN
+698,TCP,UDP|OLSR (Optimized Link-State Routing)
+699,TCP,UDP|ACCESSNETWORK
+700,TCP,UDP|EPP (Extensible Provisioning Protocol)[23] - используется для управления регистрационной информацией DNS
+701,TCP,UDP|LMP (Link Management Protocol)[24]
+702,TCP,UDP|IRIS-BEEP (IRIS over BEEP)[25] - используется для передачи сообщений IRIS (Internet Registry Information Service)[26][27] посредством протокола BEEP[en]
+704,TCP,UDP|ELCSD (errlog copy/server daemon)
+705,TCP,UDP|AGENTX
+706,TCP,UDP|SILC (Secure Internet Live Conferencing) - для организации безопасных аудио- и видеоконференций
+707,TCP,UDP|BORLAND-DSJ
+708,TCP,UDP|свободен
+709,TCP,UDP|ENTRUST-KMSH
+710,TCP,UDP|ENTRUST-ASH
+711,TCP,UDP|CISCO-TDP (Cisco Tag Distribution Protocol)[28][29]
+712,TCP,UDP|TBRPF (Topology Broadcast based on Reverse-Path Forwarding routing protocol[en])[30]
+713,TCP,UDP|IRIS-XPC (IRIS over XPC)
+713,TCP,UDP|IRIS-XPCS (IRIS over XPCS)
+715,TCP,UDP|IRIS-LWZ
+716,UDP|PANA
+729,TCP,UDP|NETVIEWDM1 (IBM NetView DM/6000 Server/Client)
+730,TCP,UDP|NETVIEWDM2 (IBM NetView DM/6000 send,TCP)
+731,TCP,UDP|NETVIEWDM3 (IBM NetView DM/6000 receive,TCP)
+741,TCP,UDP|NETGW
+742,TCP,UDP|NETRCS
+743,TCP,UDP|свободен
+744,TCP,UDP|FLEXLM (Flexible License Manager)
+745,TCP,UDP|свободен
+746,TCP,UDP|свободен
+747,TCP,UDP|FUJITSU-DEV (Fujitsu Device Control)
+748,TCP,UDP|RIS-CM (Russell Info Sci Calendar Manager)
+749,TCP,UDP|KERBEROS-ADM (Kerberos administration)
+750,TCP|RFILE
+750,UDP|LOADAV
+750,UDP|KERBEROS-IV (Kerberos version IV)
+751,TCP,UDP|PUMP
+752,TCP,UDP|QRH
+753,TCP,UDP|RRH (Reverse Routing Header)[31]
+754,TCP,UDP|TELL
+755,TCP,UDP|свободен
+756,TCP,UDP|свободен
+757,TCP,UDP|свободен
+758,TCP,UDP|NLOGIN
+759,TCP,UDP|CON
+760,TCP,UDP|NS
+761,TCP,UDP|RXE
+762,TCP,UDP|QUOTAD
+763,TCP,UDP|CYCLESERV
+764,TCP,UDP|OMSERV
+765,TCP,UDP|WEBSTER
+766,TCP,UDP|свободен
+767,TCP,UDP|PHONEBOOK
+768,TCP,UDP|свободен
+769,TCP,UDP|VID
+770,TCP,UDP|CADLOCK
+771,TCP,UDP|RTIP
+772,TCP,UDP|CYCLESERV2
+773,TCP|SUBMIT
+773,UDP|NOTIFY
+774,TCP|RPASSWD
+774,UDP|ACMAINT-DBD
+775,TCP|ENTOMB
+775,UDP|ACMAINT-TRANSD
+776,TCP,UDP|WPAGES
+777,TCP,UDP|Multiling-HTTP
+778,TCP,UDP|свободен
+779,TCP,UDP|свободен
+780,TCP,UDP|WPGS
+782,TCP|используется Conserver
+783,TCP|используется SpamAssassin
+800,TCP,UDP|MDBS-DAEMON
+801,TCP,UDP|DEVICE
+810,TCP|FCP
+810,UDP|FCP-UDP
+828,TCP,UDP|ITM-MCELL-S
+829,TCP,UDP|PKIX-3-CA-RA
+830,TCP,UDP|NETCONF-SSH (NETCONF over SSH)[32] - NETCONF через SSH
+831,TCP,UDP|NETCONF-BEEP (NETCONF over BEEP)[33] - NETCONF через BEEP[en]
+832,TCP,UDP|NETCONFSOAPHTTP (NETCONF for SOAP over HTTPS)[34] - NETCONF через SOAP и SSH
+833,TCP,UDP|NETCONFSOAPBEEP (NETCONF for SOAP over BEEP)[34] - NETCONF через SOAP и BEEP[en]
+847,TCP,UDP|DHCP-FAILOVER2 (DHCP Failover)[19]
+848,TCP,UDP|GDOI (Group Domain of Interpretation)[35]
+860,TCP,UDP|ISCSI (Internet Small Computer Systems Interface)[36][37]
+861,TCP,UDP|OWAMP-CONTROL (One-way Active Measurement Protocol Control)[38]
+862,TCP,UDP|TWAMP-CONTROL (Two-way Active Measurement Protocol Control)[39]
+873,TCP,UDP|RSYNC (Remote Synchronization) - используется rsync
+886,TCP,UDP|ICLCNET-LOCATE (ICL coNETion locate server)
+887,TCP,UDP|ICLCNET-SVINFO (ICL coNETion server info)
+888,TCP,UDP|ACCESSBUILDER
+897,TCP,UDP|Brocade SMI-S RPC
+898,TCP,UDP|Brocade SMI-S RPC с шифрованием по SSL
+900,TCP,UDP|OMGINITIALREFS
+901,TCP,UDP|SMPNAMERES
+902,TCP,UDP|IDEAFARM-DOOR
+903,TCP,UDP|IDEAFARM-PANIC
+910,TCP,UDP|KINK (Kerberized Internet Negotiation of Keys)[42]
+911,TCP,UDP|XACT-BACKUP
+912,TCP,UDP|APEX-MESH (Application Exchange relay to relay service)[43]
+913,TCP,UDP|APEX-EDGE (Application Exchange endpoint to relay service)[43]
+989,TCP,UDP|FTPS-DATA (FTP-данные с шифрованием по SSL или TLS)
+990,TCP,UDP|FTPS (FTP-команды с шифрованием по SSL или TLS)
+991,TCP,UDP|NAS (Netnews Administration System)[44]
+992,TCP,UDP|TELNETS (Telnet с шифрованием по SSL или TLS)
+993,TCP,UDP|IMAPS (Internet Message Access Protocol с шифрованием по SSL или TLS)
+994,TCP,UDP|резерв; ранее - IRCS (IRC с шифрованием по SSL или TLS)
+995,TCP|POP3S (POP3 с шифрованием по SSL или TLS)
+996,TCP,UDP|VSINET
+997,TCP,UDP|MAITRD
+998,TCP|BUSBOY
+998,UDP|PUPARP
+999,TCP,UDP|PUPROUTER
+999,TCP|GARCON
+999,UDP|APPLIX
+1000,TCP,UDP|CADLOCK2
+1010,TCP,UDP|SURF
+1021,TCP,UDP|EXP1 (Experiment 1 по RFC3692)[45][46]
+1022,TCP,UDP|EXP2 (Experiment 2 по RFC3692)[45]
+1023,TCP,UDP|резерв
+1024,TCP,UDP|резерв
+1025,TCP,UDP|BLACKJACK
+1026,TCP,UDP|CAP
+1027,TCP|6A44 (IPv6 Behind NAT44 CPEs)[47]
+1027,UDP|резерв
+1029,TCP,UDP|SOLID-MUX
+1033,TCP,UDP|NETINFO-LOCAL
+1034,TCP,UDP|ACTIVESYNC
+1035,TCP,UDP|MXXRLOGIN
+1036,TCP,UDP|NSSTP (Nebula Secure Segment Transfer Protocol)
+1037,TCP,UDP|AMS
+1038,TCP,UDP|MTQP (Message Tracking Query Protocol)[48]
+1039,TCP,UDP|SBL (Streamlined Blackhole)
+1040,TCP,UDP|NETARX
+1041,TCP,UDP|DANF-AK2
+1042,TCP,UDP|AFROG Subnet Roaming
+1043,TCP,UDP|BOINC-CLIENT
+1044,TCP,UDP|DCUTILITY (Dev Consortium Utility)
+1045,TCP,UDP|FPITP (Fingerprint Image Transfer Protocol)
+1046,TCP,UDP|WFREMOTERTM (WebFilter Remote Monitor)
+1047,TCP,UDP|NEOD1 (Sun’s NEO Object Request Broker)
+1048,TCP,UDP|NEOD2 (Sun’s NEO Object Request Broker)
+1049,TCP,UDP|TD-POSTMAN (Tobit David Postman VPMN)
+1050,TCP,UDP|CBA (CORBA Management Agent)
+1051,TCP,UDP|OPTIMA-VNET
+1052,TCP,UDP|DDT (Dynamic DNS Tools)
+1053,TCP,UDP|REMOTE-AS (Remote Assistant)
+1054,TCP,UDP|BRVREAD
+1055,TCP,UDP|ANSYSLMD (ANSYS License Manager)
+1056,TCP,UDP|VFO
+1057,TCP,UDP|STARTRON
+1058,TCP,UDP|NIM (IBM AIX Network Installation Manager)[49]
+1059,TCP,UDP|NIMREG (IBM AIX Network Installation Manager Registration)
+1060,TCP,UDP|POLESTAR
+1061,TCP,UDP|KIOSK
+1062,TCP,UDP|Veracity
+1063,TCP,UDP|KyoceraNetDev
+1064,TCP,UDP|JSTEL
+1065,TCP,UDP|SYSCOMLAN
+1066,TCP,UDP|FPO-FNS
+1067,TCP,UDP|INSTL-BOOTS (Installation Bootstrap Protocol Server)
+1068,TCP,UDP|INSTL-BOOTC (Installation Bootstrap Protocol Client)
+1069,TCP,UDP|COGNEX-INSIGHT
+1070,TCP,UDP|GMRUpdateSERV
+1071,TCP,UDP|BSQUARE-VOIP
+1072,TCP,UDP|CARDAX
+1073,TCP,UDP|BridgeControl
+1074,TCP,UDP|WARMSPOTMGMT (Warmspot Management Protocol)
+1075,TCP,UDP|RDRMSHC
+1076,TCP,UDP|DAB-STI-C
+1077,TCP,UDP|IMGames
+1078,TCP,UDP|Avocent-Proxy
+1079,TCP,UDP|ASPROVATalk
+1080,TCP,UDP|SOCKS
+1081,TCP,UDP|PVUNIWIEN
+1082,TCP,UDP|AMT-ESD-PROT
+1083,TCP,UDP|ANSOFT-LM-1 (Anasoft License Manager)
+1084,TCP,UDP|ANSOFT-LM-2 (Anasoft License Manager)
+1085,TCP,UDP|WebObjects[en]
+1086,TCP,UDP|cplscrambler-lg (CPL Scrambler Logging)
+1087,TCP,UDP|cplscrambler-in (CPL Scrambler Internal)
+1088,TCP,UDP|cplscrambler-al (CPL Scrambler Alarm Log)
+1089,TCP,UDP|ff-annunc (FF Annunciation)
+1090,TCP,UDP|ff-fms (FF Fieldbus Message Specification)
+1091,TCP,UDP|ff-sm (FF System Management)
+1092,TCP,UDP|obrpd (Open Business Reporting Protocol)
+1093,TCP,UDP|PROOFD
+1094,TCP,UDP|ROOTD
+1095,TCP,UDP|NICELink
+1096,TCP,UDP|cnrprotocol (Common Name Resolution Protocol)
+1097,TCP,UDP|sunclustermgr (Sun Cluster Manager)
+1098,TCP,UDP|rmiactivation (RMI Activation)
+1099,TCP,UDP|rmiregistry (RMI Registry)
+1100,TCP,UDP|MCTP
+1101,TCP,UDP|PT2-DISCOVER
+1102,TCP,UDP|ADOBESERVER-1
+1103,TCP,UDP|ADOBESERVER-2
+1104,TCP,UDP|XRL
+1105,TCP,UDP|FTRANHC
+1106,TCP,UDP|ISOIPSIGPORT-1
+1107,TCP,UDP|ISOIPSIGPORT-2
+1108,TCP,UDP|ratio-adp
+1109,TCP,UDP|резерв
+1110,TCP|WEBADMSTART, Start web admin server
+1110,UDP|NFSD-KEEPALIVE, Client status info
+1111,TCP,UDP|LMSocialServer
+1112,TCP,UDP|ICP (Intelligent Communication Protocol)
+1113,TCP,UDP|LTP-DEEPSPACE (Licklider Transmission Protocol)[50]
+1114,TCP,UDP|Mini-SQL
+1115,TCP,UDP|ARDUS-TRNS (ARDUS Transfer)
+1116,TCP,UDP|ARDUS-CNTL (ARDUS Control)
+1117,TCP,UDP|ARDUS-MTRNS (ARDUS Multicast Transfer)
+1118,TCP,UDP|SACRED (Securely Available Credentials Protocol)[51]
+1119,TCP,UDP|BNETGAME (Battle.net Chat/Game Protocol)
+1120,TCP,UDP|BNETFILE (Battle.net File Transfer Protocol) - используется, например, в играх Starcraft для голосовой связи
+1121,TCP,UDP|RMPP
+1122,TCP,UDP|availant-mgr
+1123,TCP,UDP|Murray
+1124,TCP,UDP|hpvmmcontrol (HP VMM Control)
+1125,TCP,UDP|hpvmmagent (HP VMM Agent)
+1126,TCP,UDP|hpvmmdata (HP VMM Data)
+1127,TCP,UDP|KWDB-COMMN (KWDB Remote Communication)
+1128,TCP,UDP|SAPHostCtrl (SAPHostControl over SOAP/HTTP)
+1129,TCP,UDP|SAPHostCtrlS (SAPHostControl over SOAP/HTTPS)
+1130,TCP,UDP|CASP (CAC App Service Protocol)
+1131,TCP,UDP|CASPSSL (CAC App Service Protocol с шифрованием по SSL)
+1132,TCP,UDP|KVM-VIA-IP
+1133,TCP,UDP|DFN (Data Flow Network)
+1134,TCP,UDP|APLX (MicroAPL APLX)
+1135,TCP,UDP|OmniVision Communication Service
+1136,TCP,UDP|HHB-Gateway
+1137,TCP,UDP|TRIM Workgroup Service
+1138,TCP,UDP|encrypted-admin
+1139,TCP,UDP|EVM (Enterprise Virtual Manager)
+1140,TCP,UDP|AutoNOC Network Operations protocol
+1141,TCP,UDP|MXOMSS, User Message Service
+1142,TCP,UDP|EDTOOLS, User Discovery Service
+1143,TCP,UDP|IMYX (Infomatryx Exchange)
+1144,TCP,UDP|FUSCRIPT (Fusion Script)
+1145,TCP,UDP|X9-ICUE (X9 iCue Show Control)
+1146,TCP,UDP|AUDIT-TRANSFER
+1147,TCP,UDP|CAPIoverLAN
+1148,TCP,UDP|ELFIQ-REPL (Elfiq Replication Service)
+1149,TCP,UDP|BVTSONAR (BlueView Sonar Service)
+1150,TCP,UDP|BLAZE (Blaze File Server)
+1151,TCP,UDP|UNIZENSUS (Unizensus Login Server)
+1152,TCP,UDP|WINPOPLANMESS (Winpopup LAN Messenger)
+1153,TCP,UDP|C1222-ACSE (ANSI C12.22 Port)[52]
+1154,TCP,UDP|RESACOMMUNITY
+1155,TCP,UDP|NFA (Network File Access)
+1156,TCP,UDP|iasControl-OMS (Oracle)
+1157,TCP,UDP|iasControl (Oracle)
+1158,TCP,UDP|dbControl-OMS (Oracle)
+1159,TCP,UDP|Oracle-OMS
+1160,TCP,UDP|OLSV, DB Lite Multi-User Server
+1161,TCP,UDP|HEALTH-POLLING
+1162,TCP,UDP|HEALTH-TRAP
+1163,TCP,UDP|SDDP (SmartDialer Data Protocol)
+1164,TCP,UDP|QSM-Proxy
+1165,TCP,UDP|QSM-GUI
+1166,TCP,UDP|QSM-REMOTE
+1167,TCP,UDP|Cisco-IPSLA (Cisco IOS IP Service Level Agreements control protocol)
+1168,TCP,UDP|VCHAT Conference Service
+1169,TCP,UDP|TRIPWIRE
+1170,TCP,UDP|ATC-LM (AT+C License Manager)
+1171,TCP,UDP|ATC-APPSERVER (AT+C FmiApplicationServer)
+1172,TCP,UDP|DNAP
+1173,TCP,UDP|D-CINEMA-RRP (D-Cinema Request-Response)
+1174,TCP,UDP|FNET-REMOTE-UI (FlashNet Remote Admin)
+1175,TCP,UDP|DOSSIER
+1176,TCP,UDP|INDIGO-SERVER (Indigo Home Automation Server) - используется сервером на базе Mac OS X в системе домашней автоматизации Indigo
+1177,TCP,UDP|DKMessenger
+1178,TCP,UDP|SGI-STORMAN (SGI Storage Manager)
+1179,TCP,UDP|B2N (Backup To Neighbor)
+1180,TCP,UDP|MC-CLIENT (Millicent Client Proxy)
+1181,TCP,UDP|3COMNETMAN (3Com Net Management)
+1182,TCP|AcceleNet (команды)
+1182,UDP|AcceleNet-data (данные)
+1183,TCP,UDP|LLSURFUP-HTTP
+1184,TCP,UDP|LLSURFUP-HTTPS
+1185,TCP,UDP|CATCHPOLE
+1186,TCP,UDP|MySQL-Cluster
+1187,TCP,UDP|Alias Service
+1188,TCP,UDP|HP-WebAdmin
+1189,TCP,UDP|UNET
+1190,TCP,UDP|COMMLINX-AVL
+1191,TCP,UDP|GPFS (General Parallel File System)
+1192,TCP,UDP|CAIDS-SENSOR
+1193,TCP,UDP|FIVEACROSS
+1194,TCP,UDP|OpenVPN
+1195,TCP,UDP|RSF-1 clustering
+1196,TCP,UDP|NETMAGIC (Network Magic)
+1197,TCP,UDP|CARRIUS-RSHELL (Carrius Remote Access)
+1198,TCP,UDP|CAJO-DISCOVERY - используется в среде распределённых вычислений Cajo[en], ориентированной на приложения Java
+1199,TCP,UDP|DMIDI
+1200,TCP,UDP|SCOL - используется сервером Cryo Interactive
+1214,TCP|Kazaa
+1220,TCP|QuickTime Streaming Server administration
+1223,TCP,UDP|TGP, TrulyGlobal[53] Protocol, also known as «The Gur Protocol» (named for Gur Kimchi of TrulyGlobal)
+1241,TCP,UDP|Nessus Security Scanner
+1270,TCP,UDP|Microsoft System Center Operations Manager (SCOM) (formerly Microsoft Operations Manager (MOM)) agent
+1352,TCP|IBM Lotus Notes/Domino RPC protocol[54]
+1387,TCP,UDP|cadsi-lm[55] (formerly Computer Aided Design Software, Inc. (CADSI)) LM
+1414,TCP|IBM WebSphere MQ (formerly known as MQSeries)
+1431,TCP|Reverse Gossip Transport Protocol (RGTP)[56], used to access a General-purpose Reverse-Ordered Gossip Gathering System (GROGGS) bulletin board, such as that implemented on the Cambridge University's Phoenix system
+1433,TCP,UDP|Microsoft SQL Server - Server
+1434,TCP,UDP|Microsoft SQL Server - dedicated administrator connection (DAC); SQL Server Browser
+1494,TCP|Citrix XenApp Independent Computing Architecture (ICA) thin client protocol
+1512,TCP,UDP|Microsoft Windows Internet Name Service (WINS)
+1521,TCP|nCube License Manager
+1524,TCP,UDP|ingreslock, ingres
+1533,TCP|IBM Sametime IM-Virtual Places Chat
+1547,TCP,UDP|Laplink
+1581,UDP|MIL STD 2045-47001 VMF
+1677,TCP,UDP|Novell GroupWise clients in client/server access mode
+1701,UDP|Layer 2 Forwarding Protocol (L2F) & Layer 2 Tunneling Protocol (L2TP)
+1720,TCP,UDP|h323hostcall (H323 VoIP calls)
+1721,TCP|PPTP VPN (совместно с протоколом GRE 47|
+1723,TCP,UDP|Microsoft Point-to-Point Tunneling Protocol (PPTP)
+1755,TCP,UDP|Microsoft Media Services (MMS, ms-streaming)
+1761,TCP,UDP|cft-0
+1812,TCP,UDP|radius, RADIUS authentication protocol
+1813,TCP,UDP|radacct, RADIUS accounting protocol
+1863,TCP|MSNP (Microsoft Notification Protocol), used by the .NET Messenger Service and a number of Instant Messaging clients
+1883,TCP|MQTT without encryption
+1900,UDP|Microsoft SSDP Enables discovery of UPnP devices
+1935,TCP|Adobe Macromedia Flash Real Time Messaging Protocol (RTMP) «plain» protocol
+1947,TCP|HASP SRM Работа и с сетевым, и с локальным ключами HASP происходит через локальный демон или службу по TCP/1947
+1970,TCP,UDP|Danware NetOp[59] Remote Control
+1971,TCP,UDP|Danware NetOp School
+1972,TCP,UDP|InterSystems Caché
+1980,UDP|ROMAN NetSend
+1984,TCP|Big Brother-network monitoring tool
+1985,UDP|Cisco HSRP
+1994,TCP,UDP|Cisco STUN-SDLC (Serial Tunneling-Synchronous Data Link Control) protocol
+1998,TCP,UDP|Cisco X.25 over TCP (XOT) service
+2000,TCP,UDP|Cisco SCCP (Skinny)
+2004,TCP|MyChat communication protocol
+2031,TCP,UDP|mobrien-chat-obsolete[61]
+2046,UDP|ViPNet
+2047,TCP,UDP|VipNet (служебные данные)
+2048,UDP|ViPNet
+2049,UDP|Network File System
+2049,UDP|shilp
+2050,UDP|ViPNet
+2053,UDP|lot105-ds-upd Lot105 DSuper Updates
+2053,TCP|lot105-ds-upd Lot105 DSuper Updates
+2073,TCP,UDP|DataReel Database
+2074,TCP,UDP|Vertel VMF SA (то есть App. SpeakFreely)
+2082,TCP|Infowave Mobility Server
+2083,TCP|Secure Radius Service (radsec)
+2086,TCP|GNUnet
+2102,TCP,UDP|zephyr-srv Project Athena Zephyr Notification Service server
+2103,TCP,UDP|zephyr-clt Project Athena Zephyr Notification Service serv-hm connection
+2104,TCP,UDP|zephyr-hm Project Athena Zephyr Notification Service hostmanager
+2105,TCP,UDP|IBM MiniPay
+2161,TCP|APC Agent
+2181,TCP,UDP|EForward-document transport system
+2193,TCP,UDP|DrWeb Enterprise Suite Agent connections
+2219,TCP,UDP|NetIQ NCAP Protocol
+2220,TCP,UDP|NetIQ End2End
+2404,TCP|IEC 60870-5-104, used to send electric power telecontrol messages between two systems via directly connected data circuits
+2427,UDP|Cisco MGCP
+2428,TCP|Cisco MGCP|?
+2447,TCP,UDP|ovwdb - OpenView Network Node Manager (NNM) daemon
+2483,TCP,UDP|Oracle database listening for unsecure client connections to the listener, replaces port 1521
+2484,TCP,UDP|Oracle database listening for SSL client connections to the listener
+2612,TCP,UDP|QPasa from MQSoftware
+2735,TCP,UDP|NetIQ Monitor Console
+2809,TCP|corbaloc: iiop URL, per the CORBA 3.0.3 specification
+2809,UDP|corbaloc: iiop URL, per the CORBA 3.0.3 specification.
+2948,TCP,UDP|WAP-push Multimedia Messaging Service (MMS)
+2949,TCP,UDP|WAP-pushsecure Multimedia Messaging Service (MMS)
+3050,TCP,UDP|gds_db (СУБД Interbase/Firebird)
+3074,TCP,UDP|Xbox Live
+3260,TCP,UDP|iSCSI target
+3268,TCP,UDP|msft-gc, Microsoft Global Catalog (LDAP service which contains data from Active Directory forests)
+3269,TCP,UDP|msft-gc-ssl, Microsoft Global Catalog over SSL (similar to port 3268, LDAP over SSL)
+3283,TCP|Apple Remote Desktop reporting (officially Net Assistant, referring to an earlier product)
+3305,TCP,UDP|odette-ftp, Odette File Transfer Protocol (OFTP)
+3306,TCP,UDP|Система управления базами данных MySQL
+3386,TCP,UDP|GTP' 3GPP GSM/UMTS CDR logging protocol
+3396,TCP,UDP|Novell NDPS Printer Agent
+3455,TCP,UDP|[RSVP] Reservation Protocol
+3632,TCP|distributed compiler
+3689,TCP|Digital Audio Access Protocol (DAAP)-used by Apple’s iTunes and AirPort Express
+3690,TCP,UDP|Subversion version control system
+3702,TCP,UDP|Web Services Dynamic Discovery (WS-Discovery), используется некоторыми компонентами Windows Vista
+3724,TCP,UDP|World of Warcraft Online gaming MMORPG
+3784,UDP|Biderectional Forwarding Detection RFC5881 Control packets
+3785,UDP|Biderectional Forwarding Detection RFC5881 BFD Echo packets
+3868,TCP|DIAMETER base protocol
+3900,TCP|udt_os, IBM UniData UDT OS[65]
+3945,TCP,UDP|EMCADS service, a Giritech product used by G/On
+3949,TCP,UDP|OER communications - Optimized Edge Routing
+3951,TCP,UDP|сканер портов
+4080,TCP,UDP|Kerio Control Administration
+4081,TCP,UDP|Secured Kerio Control Administration
+4089,TCP,UDP|OpenCORE Remote Control Service
+4090,TCP,UDP|Kerio VPN
+4093,TCP,UDP|PxPlus Client server interface ProvideX
+4096,TCP,UDP|Bridge-Relay Element ASCOM
+4111,TCP|Xgrid
+4307,TCP|TrueConf Для обмена медиаданными между TrueConf Server и клиентскими приложениями.
+4500,UDP|IPsec NAT traversal
+4662,TCP,UDP|OrbitNet Message Service
+4712,TCP|IEEE Std C37.118.2™-2011
+4713,UDP|IEEE Std C37.118.2™-2011
+4894,TCP,UDP|LysKOM Protocol A
+4899,TCP,UDP|RAdmin-программа для удаленного управления
+5000,TCP|commplex-main
+5000,TCP|Synology DSM (HTTP)
+5001,TCP|commplex-link
+5001,TCP|Synology DSM (HTTPS)
+5003,TCP,UDP|FileMaker
+5004,TCP,UDP|RTP (Real-time Transport Protocol) media data
+5005,TCP,UDP|RTP (Real-time Transport Protocol) control protocol
+5051,TCP|ita-agent Symantec Intruder Alert[66]
+5060,TCP,UDP|Session Initiation Protocol (SIP)
+5061,TCP|Session Initiation Protocol (SIP) over TLS
+5154,TCP,UDP|BZFlag
+5190,TCP|ICQ и AOL Instant Messenger
+5222,TCP|Extensible Messaging and Presence Protocol (XMPP, Jabber) client connection
+5269,TCP|Extensible Messaging and Presence Protocol (XMPP, Jabber) server connection
+5298,TCP,UDP|Extensible Messaging and Presence Protocol (XMPP) link-local messaging
+5351,TCP,UDP|NAT Port Mapping Protocol-client-requested configuration for inbound connections through network address translators
+5353,UDP|Multicast DNS (MDNS)
+5355,TCP,UDP|LLMNR-Link-Local Multicast Name Resolution, allows hosts to perform name resolution for hosts on the same local link (only provided by Windows Vista and Server 2008)
+5402,TCP,UDP|mftp, Stratacache OmniCast[68] content delivery system MFTP file sharing protocol
+5405,TCP,UDP|NetSupport
+5421,TCP,UDP|NetSupport 2
+5432,TCP,UDP|PostgreSQL
+5556,TCP,UDP|Freeciv
+5631,TCP|pcANYWHEREdata, Symantec pcAnywhere (version 7.52 and later[69])[70] data
+5632,UDP|pcANYWHEREstat, Symantec pcAnywhere (version 7.52 and later) status
+5814,TCP,UDP|Hewlett-Packard Support Automation (HP OpenView Self-Healing Services)
+5900,TCP,UDP|Virtual Network Computing (VNC) remote desktop protocol (used by Apple Remote Desktop and others)
+5984,TCP,UDP|CouchDB database server
+6000,TCP|X11-used between an X client and server over the network
+6001,UDP|X11-used between an X client and server over the network
+6086,TCP|PDTP-FTP like file server in a P2P network
+6110,TCP,UDP|softcm, HP Softbench CM
+6111,TCP,UDP|spc, HP Softbench Sub-Process Control
+6112,TCP,UDP|«dtspcd»-a network daemon that accepts requests from clients to execute commands and launch applications remotely
+6346,TCP,UDP|gnutella-svc, Gnutella (FrostWire, Limewire, Shareaza, etc.)
+6347,TCP,UDP|gnutella-rtr, Gnutella alternate
+6444,TCP,UDP|Sun Grid Engine-Qmaster Service
+6445,TCP,UDP|Sun Grid Engine-Execution Service
+6514,TCP,UDP|Протокол Syslog - доставка сообщений о происходящих в системе событиях с использованием механизмов TLS/DTLS[72]
+6619,TCP,UDP|odette-ftps, Odette File Transfer Protocol (OFTP) over TLS/SSL
+6888,TCP,UDP|MUSE
+6969,TCP,UDP|acmsoda
+8000,TCP,UDP|iRDMI (Intel Remote Desktop Management Interface)[76]-sometimes erroneously used instead of port 8080, HIKVISION surveillance devices
+8008,TCP|Альтернативный порт HTTP
+8080,TCP|Альтернативный порт HTTP (http_alt) - обычно используется для организации веб-прокси и кэширующих серверов, запуска веб-сервера от имени не-root пользователя
+8118,TCP|Privoxy-advertisement-filtering Web proxy
+8333,TCP|Bitcoin Network or Wallet
+8400,TCP,UDP|cvp, Commvault[en] Unified Data Management
+8530,TCP|Синхронизация WSUS. Службы обновлений Microsoft Windows. (в незашифрованном виде)
+8531,TCP|Синхронизация WSUS. Службы обновлений Microsoft Windows. (в шифрованном виде)
+8880,TCP,UDP|cddbp-alt, альтернатива CDDB (CDDBP)
+8883,TCP|MQTT over SSL
+8888,TCP,UDP|NewsEDGE server
+9009,TCP,UDP|Pichat Server - Peer to peer chat software
+9080,TCP,UDP|glrpc, Groove Collaboration software GLRPC
+9080,TCP|DrWeb Enterprise Suite Web Control
+9081,TCP|DrWeb Enterprise Suite Web Control
+9100,TCP|JetDirect HP Print Services
+9119,TCP,UDP|MXit Instant Messenger
+9339,TCP|Supercell’s games server (Clash of Clans, Clash Royale servers) and Nano Brawl Nano Team server
+9342,TCP|Dandle's servers
+9418,TCP,UDP|git, Git pack transfer service
+9535,TCP|mngsuite, LANDesk Management Suite Remote Control
+9535,UDP|mngsuite, LANDesk Management Suite Remote Control
+9800,TCP,UDP|WebDAV Source
+10008,TCP,UDP|Octopus Multiplexer, primary port for the CROMP protocol[82], which provides a platform-independent means for communication of objects across a network
+10050,TCP,UDP|Zabbix-Agent
+10051,TCP,UDP|Zabbix-Trapper
+10101,TCP|DrWeb Enterprise Suite remote server diagnostics utility
+10113,TCP,UDP|NetIQ Endpoint
+10114,TCP,UDP|NetIQ Qcheck
+10115,TCP,UDP|NetIQEndpoint
+10116,TCP,UDP|NetIQ VoIP Assessor
+13000,TCP|Kaspersky Security Center
+13111,TCP|Kaspersky Security Center|
+13231,UDP|WireGuard|
+13291,TCP|Kaspersky Security Center
+13292,TCP|Kaspersky Security Center|
+13720,TCP,UDP|Symantec NetBackup - bprd (formerly VERITAS)
+13721,TCP,UDP|Symantec NetBackup - bpdbm (formerly VERITAS)
+13724,TCP,UDP|Symantec Network Utility - vnetd (formerly VERITAS)
+13782,TCP,UDP|Symantec NetBackup - bpcd (formerly VERITAS)
+13783,TCP,UDP|Symantec VOPIED protocol (formerly VERITAS)
+13785,TCP,UDP|Symantec NetBackup Database - nbdb (formerly VERITAS)
+13786,TCP,UDP|Symantec nomdb (formerly VERITAS)
+14000,TCP|Kaspersky Security Center
+15000,TCP,UDP|Kaspersky Security Center
+15000,TCP,UDP|hydap, Hypack Hydrographic Software Packages Data Acquisition
+15001,UDP|Kaspersky Security Center|
+15345,TCP,UDP|XPilot Contact
+18181,TCP|Content Vectoring Protocol (OPSEC CVP) - интеграция файрволлов с антивирусными серверами.
+22347,TCP,UDP|WibuKey, WIBU-SYSTEMS AG Software protection system[88]
+22350,TCP,UDP|CodeMeter, WIBU-SYSTEMS AG Software protection system[89]
+23768,TCP|Nintendo Switch
+24554,TCP,UDP|BINKP, Fidonet mail transfers over TCP/IP
+26000,TCP,UDP|id Software's Quake server
+30003,UDP|Amicon FPSU-IP Remote Administration
+30004,UDP|Amicon FPSU-IP VPN
+33434,TCP,UDP|traceroute
+40000,TCP,UDP|SafetyNET p Real-time Industrial Ethernet protocol
+47808,TCP,UDP|BACnet Building Automation and Control Networks
+49000,UDP|резерв
+51820,UDP|WireGuard
