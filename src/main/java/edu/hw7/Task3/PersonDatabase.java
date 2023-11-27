@@ -4,6 +4,8 @@ import java.util.List;
 
 public interface PersonDatabase {
 
+    long size();
+
     void add(Person person);
 
     void delete(int id);

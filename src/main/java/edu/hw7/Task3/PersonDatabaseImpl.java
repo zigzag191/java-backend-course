@@ -33,6 +33,11 @@ public class PersonDatabaseImpl implements PersonDatabase {
     }
 
     @Override
+    public long size() {
+        return persons.size();
+    }
+
+    @Override
     public void add(Person person) {
         persons.put(person.id(), person);
         addToIndex(nameIndex, person.name(), person);
