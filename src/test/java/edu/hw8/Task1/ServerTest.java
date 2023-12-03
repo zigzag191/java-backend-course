@@ -19,17 +19,6 @@ public class ServerTest {
 
     static Process serverProcess;
 
-    @BeforeAll
-    static void startServer() throws IOException, InterruptedException {
-        var javaHome = System.getProperty("java.home");
-        var javaBin = Paths.get(javaHome, "bin", "java").toString();
-        var classpath = System.getProperty("java.class.path");
-        var className = Main.class.getCanonicalName();
-        var builder = new ProcessBuilder(javaBin, "-cp", classpath, className);
-        serverProcess = builder.start();
-        Thread.sleep(1000);
-    }
-
     public static Stream<Arguments> serverShouldReturnRightPhrases() {
         return Stream.of(
             arguments("личности", "Не переходи на личности там, где их нет"),
@@ -46,6 +35,17 @@ public class ServerTest {
         );
     }
 
+    @BeforeAll
+    static void startServer() throws IOException, InterruptedException {
+        var javaHome = System.getProperty("java.home");
+        var javaBin = Paths.get(javaHome, "bin", "java").toString();
+        var classpath = System.getProperty("java.class.path");
+        var className = Main.class.getCanonicalName();
+        var builder = new ProcessBuilder(javaBin, "-cp", classpath, className);
+        serverProcess = builder.start();
+        Thread.sleep(1000);
+    }
+
     @AfterAll
     static void terminateServer() {
         serverProcess.destroy();
@@ -54,7 +54,7 @@ public class ServerTest {
     @ParameterizedTest
     @MethodSource
     void serverShouldReturnRightPhrases(String keyword, String expected) throws IOException {
-        var client = new Client("127.0.0.1", 8080);
+        var client = new Client("127.0.0.1", Main.PORT);
         var phrase = client.getCatchPhrase(keyword);
         assertThat(phrase).isEqualTo(expected);
     }
@@ -64,7 +64,7 @@ public class ServerTest {
         var responses = Stream
             .generate(() -> {
                 try {
-                    return new Client("127.0.0.1", 8080);
+                    return new Client("127.0.0.1", Main.PORT);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
