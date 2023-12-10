@@ -4,8 +4,8 @@ import edu.project2.generators.MazeGenerator;
 import edu.project2.generators.RecursiveBackTracker;
 import edu.project2.maze.Maze;
 import edu.project2.maze.MazePosition;
-import edu.project2.solvers.DijkstraSolver;
 import edu.project2.solvers.MazeSolver;
+import edu.project2.solvers.MultithreadedDfsSolver;
 import java.util.Random;
 
 public final class Main {
@@ -18,7 +18,7 @@ public final class Main {
 
     public static void main(String[] args) {
         var generator = new RecursiveBackTracker();
-        var solver = new DijkstraSolver();
+        var solver = new MultithreadedDfsSolver();
         runMazeDemo(generator, solver);
     }
 
