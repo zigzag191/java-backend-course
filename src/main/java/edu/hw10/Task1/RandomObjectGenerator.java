@@ -98,6 +98,7 @@ public class RandomObjectGenerator {
             : null;
     }
 
+    @SuppressWarnings("ReturnCount")
     private Object generatePrimitive(Class<?> clazz, int rangeMin, int rangeMax) {
         var rng = ThreadLocalRandom.current();
         if (clazz == double.class || clazz == Double.class) {
