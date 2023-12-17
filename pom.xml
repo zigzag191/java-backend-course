@@ -180,7 +180,7 @@
                     <version>${jacoco-maven-plugin.version}</version>
                     <configuration>
                         <excludes>
-                            <exclude>edu/hw11/**</exclude>
+                            <exclude>edu/hw11/Task2/**</exclude>
                         </excludes>
                     </configuration>
                     <executions>
