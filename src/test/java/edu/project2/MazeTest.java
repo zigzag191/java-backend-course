@@ -7,6 +7,7 @@ import edu.project2.maze.MazePosition;
 import edu.project2.solvers.DfsSolver;
 import edu.project2.solvers.DijkstraSolver;
 import edu.project2.solvers.MazeSolver;
+import edu.project2.solvers.MultithreadedDfsSolver;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.List;
@@ -67,7 +68,8 @@ public class MazeTest {
     static Stream<MazeSolver> solversShouldProduceExpectedPath() {
         return Stream.of(
             new DfsSolver(),
-            new DijkstraSolver()
+            new DijkstraSolver(),
+            new MultithreadedDfsSolver()
         );
     }
 
